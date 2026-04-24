@@ -1,11 +1,11 @@
 ---
 name: clara-module
-description: Use this skill whenever working on the Shopot project — a Laravel 5.x application using the Clara module management library (by Megaads). Triggers include: creating, installing, enabling, disabling, or removing Clara modules in Shopot; registering module actions, views, or variables; setting up new features as modules; working with module assets, configurations, or the module.json file; debugging module loading issues; or any mention of "shopot", "clara", "module:make", "module:install", "Module::action", "Module::view", "Module::onAction", "Module::onView", or modular Laravel architecture in the Shopot codebase. Always use this skill when the user is building or managing features in the Shopot project.
+description: Use this skill whenever working on the Laravel 5.x application using the Clara module management library (by Megaads). Triggers include: creating, installing, enabling, disabling, or removing Clara modules; registering module actions, views, or variables; setting up new features as modules; working with module assets, configurations, or the module.json file; debugging module loading issues; or any mention of "clara", "module:make", "module:install", "Module::action", "Module::view", "Module::onAction", "Module::onView", or modular Laravel architecture in the codebase. Always use this skill when the user is building or managing features in the project.
 ---
 
-# Shopot — Laravel 5.x + Clara Module Manager
+# Laravel 5.x + Clara Module Manager
 
-Shopot is built on Laravel 5.x and uses Clara (by Megaads) for modular feature management. Modules live in `app/Modules/` and are self-contained units with their own controllers, models, views, routes, assets, and config.
+Clara module is built on Laravel 5.x for modular feature management. Modules live in `app/Modules/` and are self-contained units with their own controllers, models, views, routes, assets, and config.
 
 **Stack**: Laravel 5.x · Clara · PHP >= 7.0
 
