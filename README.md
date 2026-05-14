@@ -1,7 +1,12 @@
+# Technical Skills
+
+Bộ sưu tập các skill cho Claude Code.
+
 ## Quick Install
 
 ### Linux / macOS
-​```bash
+
+```bash
 # Cài tất cả skill vào project hiện tại
 curl -fsSL https://raw.githubusercontent.com/megaads-vn/technical-skills/refs/heads/master/install.sh | bash
 
@@ -13,10 +18,11 @@ curl -fsSL https://raw.githubusercontent.com/megaads-vn/technical-skills/refs/he
 
 # Cài một skill cụ thể global
 curl -fsSL https://raw.githubusercontent.com/megaads-vn/technical-skills/refs/heads/master/install.sh | bash -s -- coding-convention --global
-​```
+```
 
 ### Windows (PowerShell)
-​```powershell
+
+```powershell
 # Cài tất cả skill vào project hiện tại
 irm https://raw.githubusercontent.com/megaads-vn/technical-skills/refs/heads/master/install.ps1 | iex
 
@@ -28,4 +34,4 @@ irm https://raw.githubusercontent.com/megaads-vn/technical-skills/refs/heads/mas
 
 # Cài một skill cụ thể global
 & ([scriptblock]::Create((irm https://raw.githubusercontent.com/megaads-vn/technical-skills/refs/heads/master/install.ps1))) coding-convention -Global
-​```
+```
