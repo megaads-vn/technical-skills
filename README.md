@@ -21,8 +21,11 @@ curl -fsSL https://raw.githubusercontent.com/megaads-vn/technical-skills/refs/he
 irm https://raw.githubusercontent.com/megaads-vn/technical-skills/refs/heads/master/install.ps1 | iex
 
 # Cài tất cả skill global
-powershell -c "& { $s = irm https://raw.githubusercontent.com/megaads-vn/technical-skills/refs/heads/master/install.ps1; $sb = [scriptblock]::Create($s); & $sb -Global }"
+& ([scriptblock]::Create((irm https://raw.githubusercontent.com/megaads-vn/technical-skills/refs/heads/master/install.ps1))) -Global
 
 # Cài một skill cụ thể
-powershell -c "& { $s = irm https://raw.githubusercontent.com/megaads-vn/technical-skills/refs/heads/master/install.ps1; $sb = [scriptblock]::Create($s); & $sb coding-convention }"
+& ([scriptblock]::Create((irm https://raw.githubusercontent.com/megaads-vn/technical-skills/refs/heads/master/install.ps1))) coding-convention
+
+# Cài một skill cụ thể global
+& ([scriptblock]::Create((irm https://raw.githubusercontent.com/megaads-vn/technical-skills/refs/heads/master/install.ps1))) coding-convention -Global
 ​```
